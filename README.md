@@ -1,8 +1,9 @@
 #NXSharp
-即 njit8021xclient-sharp
+即 njit8021xclient-sharp  
+认证算法与我的Linux分支[njit8021xclient](https://github.com/bitdust/njit8021xclient)同步
 fork from
 ---
-njit8021xclient: https://github.com/tengattack/8021xclient-for-windows
+njit8021xclient: https://github.com/liuqun/njit8021xclient
 
 本项目是[tengattack的windows分支](https://github.com/tengattack/8021xclient-for-windows)的修改，将其输出修改为DLL文件。添加了Nxsharp（njit8021xclient-sharp的缩写）程序作为GUI前端。同时完成了对inode7.0中的[AES128验证算法](./documents/h3c_AES_MD5.md)的支持。
 features
@@ -22,9 +23,8 @@ release
 
 depends on
 ---
-WinPcap: http://www.winpcap.org/
-
-dotNet Framework 3.5~4.5: http://www.microsoft.com/
+WinPcap: http://www.winpcap.org/  
+dotNet Framework 3.5~4.5: http://www.microsoft.com/  
 
 build
 ---
@@ -32,10 +32,8 @@ build
 
 依赖 winpcap，请从官方网站下载 
 
-[Winpcap二进制安装包](http://www.winpcap.org/install/default.htm) 
-
-以及
-
+[Winpcap二进制安装包](http://www.winpcap.org/install/default.htm)  
+以及  
 [Winpcap开发包](http://www.winpcap.org/devel.htm),并将其解压放置于Wpdpack文件夹中。
 
 more info
