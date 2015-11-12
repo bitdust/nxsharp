@@ -1,0 +1,1 @@
+__declspec(dllexport) int Authentication(const char *UserName, const char *Password, const char *DeviceName);
