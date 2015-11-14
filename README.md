@@ -11,7 +11,7 @@ features
 * windows 图形界面
 * 断线自动重连
 * h3c-AES-MD5 算法支持
-* 可以配置认证版本号、认证密钥（获取方法见 [H3C_toolkit](https://github.com/tengattack/8021xclient-for-windows) 项目）
+* 可以配置认证版本号、认证密钥（获取方法见 [H3C_toolkit](https://github.com/bitdust/H3C_toolkit) 项目）
 
 screenshot
 ---
