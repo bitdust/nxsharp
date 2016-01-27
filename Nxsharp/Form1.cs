@@ -72,7 +72,6 @@ namespace gui
             RefComm.StartAuthThread(Cfg.username, Cfg.password, "\\Device\\NPF_" + NetworkInterfaceAvaliable.adapters_dict[Cfg.device], Cfg.VersionParser(Cfg.versionHEX), Cfg.H3C_key, Cfg.mode);
             button1.Enabled = false;
             button2.Enabled = true;
-            button3.Enabled = false;
             panel1.Enabled = false;
             textBox3.Text = "";
             timer1.Enabled = true;
@@ -98,7 +97,6 @@ namespace gui
             panel1.Enabled = true;
             button1.Enabled = true;
             button2.Enabled = false;
-            button3.Enabled = true;
             textBox3.AppendText("\r\n已登出");
             timer1.Enabled = false;
         }

@@ -119,15 +119,12 @@
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
     <value>njit8021xclient-sharp
-兼容iNode CH V5.20-0407
-
-注意：
-本工具依赖微软 .NET framework3.5 运行库，请从微软官方网站下载安装。
-本工具依赖 winpcap 库，请从winpcap官方网站下载安装。
-本工具在njit8021xclient项目基础上开发，遵循GPLv3协议开源，代码托管于github:
-https://github.com/bitdust/nxsharp
+兼容iNode CH V5.20-0407 以及 CH V7.10-0313
 
 常见问题：
+0. 出现错误“stop connection 0x08”
+进入“本地连接&gt;属性&gt;身份验证”选项卡，检查是否启用了802.1x验证。请务必保持其关闭状态！
+检查是否安装有360wifi。如果有请将其卸载或者换用猎豹wifi及wifi共享精灵等。这是一个位置问题，似乎360wifi的驱动机制会干扰认证进行，希望有人能向360wifi官方反映情况。
 1.无法运行？
 请确认已安装 .net framework 3.5
 2.提示系统找不到指定的设备？
@@ -141,7 +138,11 @@ https://github.com/bitdust/nxsharp
 6.登陆成功，获取IP正确，但没有连接？
 重启电脑，或手动禁用网卡后启用之。
 7.360提示程序可疑？
-卸了360</value>
+卸了360
+
+注意：
+本工具在njit8021xclient项目基础上开发，遵循GPLv3协议开源，代码托管于github:
+https://github.com/bitdust/nxsharp</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
