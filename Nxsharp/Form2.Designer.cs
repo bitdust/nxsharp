@@ -85,19 +85,20 @@
             // modeButton1
             // 
             this.modeButton1.AutoSize = true;
-            this.modeButton1.Location = new System.Drawing.Point(27, 212);
+            this.modeButton1.Location = new System.Drawing.Point(107, 207);
             this.modeButton1.Name = "modeButton1";
             this.modeButton1.Size = new System.Drawing.Size(95, 16);
             this.modeButton1.TabIndex = 5;
             this.modeButton1.TabStop = true;
             this.modeButton1.Text = "掉线就掉线了";
             this.modeButton1.UseVisualStyleBackColor = true;
+            this.modeButton1.Visible = false;
             this.modeButton1.CheckedChanged += new System.EventHandler(this.modeButton1_CheckedChanged);
             // 
             // modeButton2
             // 
             this.modeButton2.AutoSize = true;
-            this.modeButton2.Location = new System.Drawing.Point(27, 235);
+            this.modeButton2.Location = new System.Drawing.Point(30, 220);
             this.modeButton2.Name = "modeButton2";
             this.modeButton2.Size = new System.Drawing.Size(71, 16);
             this.modeButton2.TabIndex = 6;
@@ -109,7 +110,7 @@
             // modeButton3
             // 
             this.modeButton3.AutoSize = true;
-            this.modeButton3.Location = new System.Drawing.Point(27, 258);
+            this.modeButton3.Location = new System.Drawing.Point(30, 242);
             this.modeButton3.Name = "modeButton3";
             this.modeButton3.Size = new System.Drawing.Size(155, 16);
             this.modeButton3.TabIndex = 7;
