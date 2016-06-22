@@ -104,8 +104,8 @@
             this.textBox3.Size = new System.Drawing.Size(192, 143);
             this.textBox3.TabIndex = 16;
             this.textBox3.TabStop = false;
-            this.textBox3.Text = "njit8021xclient-sharp\r\nver: 3.4 painkiller\r\n\r\n增加止痛药模式，作为应对强加密的临时措施，每10分钟掉线一次。\r\n\r\n" +
-    "首次使用请安装Winpcap";
+            this.textBox3.Text = "njit8021xclient-sharp\r\nver: 3.4 painkiller\r\n\r\n增加止痛药模式，作为应对强加密的临时措施，每7分钟掉线一次。\r\n\r\n首" +
+    "次使用请安装Winpcap";
             // 
             // panel1
             // 
