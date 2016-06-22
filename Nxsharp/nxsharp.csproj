@@ -64,7 +64,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>iNode ClientR.ico</ApplicationIcon>
+    <ApplicationIcon>iNode ClientGR.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -146,6 +146,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="iNode ClientGR.ico" />
     <Content Include="iNode ClientR.ico" />
     <Content Include="Resources\services.ico" />
   </ItemGroup>

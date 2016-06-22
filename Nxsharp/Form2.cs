@@ -18,7 +18,15 @@ namespace gui
             InitializeComponent();
             if (Cfg.mode == 1)
             {
-                checkBox1.Checked = true;
+                modeButton2.Checked = true;
+            }
+            else if(Cfg.mode == 2)
+            {
+                modeButton3.Checked = true;
+            }
+            else if (Cfg.mode == 0)
+            {
+                modeButton1.Checked = true;
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -33,10 +41,6 @@ namespace gui
                 this.Close();
             }
         }
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            Cfg.mode = 1;
-        }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -47,6 +51,39 @@ namespace gui
         {
             Form3 f3 = new Form3();
             f3.ShowDialog();      
+        }
+
+        private void modeButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(modeButton1.Checked)
+            {
+                Cfg.mode = 0;
+                Cfg.Commit();
+            }
+        }
+
+        private void modeButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (modeButton2.Checked)
+            {
+                Cfg.mode = 1;
+                Cfg.Commit();
+            }
+
+        }
+
+        private void modeButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (modeButton3.Checked)
+            {
+                Cfg.mode = 2;
+                Cfg.Commit();
+            }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

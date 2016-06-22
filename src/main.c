@@ -24,7 +24,7 @@ static 	char sPassword[100];
 static 	char sDeviceName[100];
 static 	char sVersion[17];
 static 	char sH3C_key[64];
-static int mode = 0; // 0:normal 1:auto-reconect ugly code 使用全局变量传递工作模式
+static int mode = 0; // 模式1即断线自动重连；模式0无自动重连；模式2 pankiller不发送心跳包，自动重连。 使用全局变量传递工作模式
 
 static HANDLE authThread = NULL;
 extern int stop_flag = 1;
@@ -43,14 +43,7 @@ DWORD WINAPI auth_thread_func(PVOID pParam)
 void StartAuthThread(const char *UserName, const char *Password, const char *DeviceName, const char *Version, const char *H3C_key, int mode_config)
 {
 	stop_flag = 0;
-	if (mode_config == 1)
-	{
-		mode = 1;//painkiller mode 即断线自动重连
-	}
-	else
-	{
-		mode = 0;//normal mode
-	}
+	mode = mode_config;// 模式1即断线自动重连；模式0无自动重连；模式2 pankiller不发送心跳包，自动重连。
 	strcpy(sUserName, UserName);
 	strcpy(sPassword, Password);
 	strcpy(sDeviceName, DeviceName);
