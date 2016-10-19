@@ -64,7 +64,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>iNode ClientGR.ico</ApplicationIcon>
+    <ApplicationIcon>iNode ClientR.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
