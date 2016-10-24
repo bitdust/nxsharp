@@ -100,51 +100,15 @@ char* get_sig(uint32_t index, int offset, int length, unsigned char* dst)
 	{
 		index_tmp = index; // 大端序，如MIPS架构
 	}
+	printf("h3c_AES_MD5!\n");
 	switch (index_tmp) // this line works in mips.
 	{
-	case 0x15D0EADF:base_address = x15D0EADF; break;
-	case 0x09F40DE7:base_address = x09F40DE7; break;
-	case 0x189DF2CE:base_address = x189DF2CE; break;
-	case 0x1A8AED5C:base_address = x1A8AED5C; break;
-	case 0x2F40F9D8:base_address = x2F40F9D8; break;
-	case 0x45941B98:base_address = x45941B98; break;
-	case 0x359F23C3:base_address = x359F23C3; break;
-	case 0x4167F618:base_address = x4167F618; break;
-	case 0x4BEE2975:base_address = x4BEE2975; break;
-	case 0x57F612DD:base_address = x57F612DD; break;
-	case 0x36D426DD:base_address = x36D426DD; break;
-	case 0x5E51B55F:base_address = x5E51B55F; break;
-	case 0xF245C41D:base_address = xF245C41D; break;
-	case 0x545CEFE0:base_address = x545CEFE0; break;
-	case 0x5E08D0E0:base_address = x5E08D0E0; break;
-	case 0x5E877108:base_address = x5E877108; break;
-	case 0x7130F3A5:base_address = x7130F3A5; break;
-	case 0x6DD9572F:base_address = x6DD9572F; break;
-	case 0x67195BB6:base_address = x67195BB6; break;
-	case 0x70886376:base_address = x70886376; break;
-	case 0x7137CD3A:base_address = x7137CD3A; break;
-	case 0xEF432FB9:base_address = xEF432FB9; break;
-	case 0xED4B7E03:base_address = xED4B7E03; break;
-	case 0xF1C07C91:base_address = xF1C07C91; break;
-	case 0xE45C3124:base_address = xE45C3124; break;
-	case 0xDAB58841:base_address = xDAB58841; break;
-	case 0xDA58A32E:base_address = xDA58A32E; break;
-	case 0xDF977247:base_address = xDF977247; break;
-	case 0xEAE0E002:base_address = xEAE0E002; break;
-	case 0xC3A46827:base_address = xC3A46827; break;
-	case 0xB0F2918A:base_address = xB0F2918A; break;
-	case 0xAF4ED407:base_address = xAF4ED407; break;
-	case 0xBB9EC2E1:base_address = xBB9EC2E1; break;
-	case 0xA8902F8B:base_address = xA8902F8B; break;
-	case 0xA3747988:base_address = xA3747988; break;
-	case 0x84E4BC95:base_address = x84E4BC95; break;
-	case 0x763F4D5B:base_address = x763F4D5B; break;
-	case 0x9F6C10A6:base_address = x9F6C10A6; break;
-	case 0xA9407E26:base_address = xA9407E26; break;
-	case 0xCCF59F07:base_address = xCCF59F07; break;
+	case 0x89D115D0:base_address = x89D115D0; break;
+	case 0xC2BFCB45:base_address = xC2BFCB45; break;
+	case 0x39264F3B:base_address = x39264F3B; break;
 	default:
 		printf("lookup dict failed.\n"); // 查表失败
-		base_address = xCCF59F07;
+		base_address = 0x89D115D0;
 		break;
 	}
 	memcpy(dst, base_address + offset, length);
