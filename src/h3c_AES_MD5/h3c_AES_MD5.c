@@ -145,6 +145,14 @@ char* get_sig(uint32_t index, int offset, int length, unsigned char* dst)
 	default:
 		printf("lookup dict failed.\n"); // ≤È±Ì ß∞‹
 		base_address = xCCF59F07;
+		#ifdef WIN32
+			FILE *fp;
+			if ((fp = fopen("log.txt", "a")) != NULL){
+				fprintf(fp, "new index:0x%08x\n", index_tmp);
+				fflush(fp);
+				fclose(fp);
+			}
+		#endif
 		break;
 	}
 	memcpy(dst, base_address + offset, length);
